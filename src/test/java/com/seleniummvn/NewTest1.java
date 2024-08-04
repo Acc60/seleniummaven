@@ -32,6 +32,9 @@ public class NewTest1 extends baseClass1 {
 		h3= pg.heading();
 		System.out.println(h3);
 		
+		System.out.println("Checking the first test after git aggregating");
+		System.out.println("Checking the second test after git aggregating");
+		
 		
 		
 		}
