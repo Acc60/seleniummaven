@@ -16,7 +16,7 @@ public class baseClass1  {
 	public void setup() throws InterruptedException {
 		
 	
-	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\RAHUL\\Downloads\\chromedriver-win64 (3)\\chromedriver-win64\\chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\RAHUL\\Downloads\\chromedriver-win64 (4)\\chromedriver-win64\\chromedriver.exe");
 	  ChromeOptions options = new ChromeOptions();
 	  options.addArguments("--remote-allow-origins=*");
 	   driver = new ChromeDriver(options);
