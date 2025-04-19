@@ -17,7 +17,7 @@ public class baseClass1  {
 	public void setup() throws InterruptedException {
 		
 	
-	WebDriverManager.chromedriver().driverVersion("135.0.0").setup();
+	WebDriverManager.chromedriver().clearResolutionCache().setup();
 
 
         // Configure Chrome options
