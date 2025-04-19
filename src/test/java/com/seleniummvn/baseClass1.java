@@ -38,6 +38,8 @@ public class baseClass1  {
 	
 	 @AfterClass
 	  public void teardown() {
-		  driver.quit();
+		 // driver.quit();
+		  System.out.println("Inside teardown method");
+		  
 	  }
 }
