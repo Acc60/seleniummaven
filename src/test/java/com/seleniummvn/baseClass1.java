@@ -17,8 +17,8 @@ public class baseClass1  {
 	public void setup() throws InterruptedException {
 		
 	
-	WebDriverManager.chromedriver().clearResolutionCache().setup();
-
+	//WebDriverManager.chromedriver().clearResolutionCache().setup();
+         System.setProperty("webdriver.chrome.driver", "C:\\Users\\RAHUL\\Downloads\\chromedriver-win64 (5)\\chromedriver-win64\\chromedriver.exe");
 
         // Configure Chrome options
         ChromeOptions options = new ChromeOptions();
