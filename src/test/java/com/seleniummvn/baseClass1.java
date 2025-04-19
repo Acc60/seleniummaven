@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class baseClass1  {
 	
@@ -16,11 +17,15 @@ public class baseClass1  {
 	public void setup() throws InterruptedException {
 		
 	
-	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\RAHUL\\Downloads\\chromedriver-win64 (4)\\chromedriver-win64\\chromedriver.exe");
-	  ChromeOptions options = new ChromeOptions();
-	  options.addArguments("--remote-allow-origins=*");
-	   driver = new ChromeDriver(options);
-	  
+	 WebDriverManager.chromedriver().setup();
+
+        // Configure Chrome options
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+
+        // Initialize WebDriver with options
+        WebDriver driver = new ChromeDriver(options);
+
 	   driver.get("https://the-internet.herokuapp.com/");
 	  driver.manage().window().maximize();
 	  
